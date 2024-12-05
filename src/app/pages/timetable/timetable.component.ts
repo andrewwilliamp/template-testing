@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-timetable',
-  templateUrl: './timetable.component.html',
-  styleUrls: ['./timetable.component.scss']
+    selector: 'app-timetable',
+    templateUrl: './timetable.component.html',
+    styleUrls: ['./timetable.component.scss'],
+    standalone: false
 })
 export class TimetableComponent {
   courses = ['Course 1', 'Course 2', 'Course 3', 'Course 4', 'Course 5', 'Course 6', 'Course 7', 'Course 8', 'Course 9', 'Course 10', 'Course 11', 'Course 12'];

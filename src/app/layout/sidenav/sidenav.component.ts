@@ -3,18 +3,18 @@ import { SidebarService } from '../../services/sidebar/sidebar.service';
 import { trigger, state, style, transition, animate } from '@angular/animations';
 
 @Component({
-  selector: 'app-sidenav',
-  templateUrl: './sidenav.component.html',
-  styleUrls: ['./sidenav.component.scss'],
-  animations: [
-    trigger('fadeInOut', [
-      state('void', style({ opacity: 0 })),
-      transition(':enter, :leave', [
-        animate(300, style({ opacity: 1 })),
-      ]),
-    ]),
-  ],
-
+    selector: 'app-sidenav',
+    templateUrl: './sidenav.component.html',
+    styleUrls: ['./sidenav.component.scss'],
+    animations: [
+        trigger('fadeInOut', [
+            state('void', style({ opacity: 0 })),
+            transition(':enter, :leave', [
+                animate(300, style({ opacity: 1 })),
+            ]),
+        ]),
+    ],
+    standalone: false
 })
 export class SidebarComponent implements OnInit {
 
