@@ -1,13 +1,12 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { SidebarService } from './services/sidebar/sidebar.service';
 
 @Component({
   selector: 'app-root',
-  standalone: true,
-  imports: [RouterOutlet],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrls: ['./app.component.scss'],
+  providers: [SidebarService]
 })
 export class AppComponent {
-  title = 'template-testing';
+  title = 'LMS';
 }
